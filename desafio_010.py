@@ -3,7 +3,8 @@
 # US$ 1.00 = R$ 3.37
 
 v_em_real = float(input("Digite quantos reais você tem na carteira: "))
-real_convertido_dollar = v_em_real / 3.37
+cotacao_dollar = float(input("Qual a cotação do Dollar? "))
+real_convertido_dollar = v_em_real / cotacao_dollar
 
-print(f"Valor em dolar US$ {real_convertido_dollar}")
+print(f"Valor em Dollar US$ {round(real_convertido_dollar,2)}.")
 
