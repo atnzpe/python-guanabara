@@ -20,9 +20,9 @@ if nome and idade:
     print(f"A última letra do seu nome é '{nome[len(nome)-1]}'")
 
 else:
-    if nome == "":
+    if nome == "" and idade:
         print(f'O nome esta eme branco = {nome=}')
-    elif idade == "":
+    elif idade == "" and nome:
         print(f'A idade esta em branco = {idade=}')
     else:
         print(f'Deixo o {nome=} e a {idade=} em branco!')
