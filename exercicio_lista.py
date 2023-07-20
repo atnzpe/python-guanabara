@@ -4,7 +4,6 @@ nome = input("Digite seu nome: ")
 # Peça ao usuario para digitar sua idade:
 idade = input("Digite sua idade: ")
 
-
 # Se nome e idade forem digitados:
 if nome and idade:
     # exiba
