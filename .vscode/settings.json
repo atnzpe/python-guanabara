@@ -3,5 +3,9 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {        
         "python": "python -u",
-    }
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
 }
