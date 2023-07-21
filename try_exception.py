@@ -12,4 +12,5 @@ try:
     print('FLOAT: ', numero_float)
     print(f'O dobro de {numero_str} é {numero_str * 2:.0f}')
 except:
-    ...
+    print('Impresso no bloco except')
+    print('Isso não é um número')
