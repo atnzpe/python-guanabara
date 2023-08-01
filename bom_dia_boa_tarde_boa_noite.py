@@ -6,7 +6,7 @@ Faça um programa que pergunte a hora ao usuário e, baseando-se no horário des
 try:
     hour = input("Que horas são? ")
 
-    hour_int = int(hour)
+    convert_hour_int = int(hour)
 
     bom_dia = hour >= 0 and hour <= 11
     boa_tarde = hour >= 12 and hour <= 17
@@ -18,6 +18,8 @@ try:
         print("Boa tarde!")
     elif boa_noite:
         print("Boa Noite!")
+    else:
+        print("Não existe esta hora!")    
 
 except:
     print("Voce não digitou um número!")
