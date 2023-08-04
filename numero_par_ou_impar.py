@@ -8,15 +8,15 @@ numero = float(input("Digite um numero: "))
 
 #checa_numero = numero == round(numero)
 
-#if numero % 2 == 0:
-    #print(f'{numero} é par!')
-#else:
-    #print(f'{numero} é impar')
+if numero % 2 == 0:
+    print(f'{numero} é par!')
+else:
+    print(f'{numero} é impar!')
 
 if (numero == round(numero)):
-    print(f'{int(numero)}inteiro')
+    print(f'{int(numero)} inteiro')
 else:
-    print(f'{numero}decimal')        
+    print(f'{numero} decimal')        
 
     
 #print(numero)
