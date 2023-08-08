@@ -32,13 +32,13 @@ while True:
 
     if len(operador) > 1:
         print('Digite apenas uma operação!')
-        
-        n1 = float(n1)
-        n2 = float(n2)
-        print(n1+n2)
-    #else:
-    #        print(f'Veja a merda que tu fez {n1=}, {n2=}, {operacao=}')
+        continue
 
+    if '+' in operador:
+        soma = n1_float+n2_float
+        print(f"A soma é {soma}")
+        continue
+    
     sair = input("Quer sair? [s]im: ").lower().startswith('s') #deixa tudo minisculo e se começar com s retorna um True.
     print(sair)
 
