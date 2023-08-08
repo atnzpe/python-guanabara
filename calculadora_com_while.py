@@ -37,7 +37,25 @@ while True:
     if '+' in operador:
         soma = n1_float+n2_float
         print(f"A soma é {soma}")
-        continue
+        print("final da soma!")
+    
+    elif '-' in operador:
+        sub = n1_float - n2_float
+        print(f"A subtração é {sub}")
+        print("final da Subtração!") 
+    
+    elif '/' in operador:
+        div = n1_float / n2_float
+        print(f"A divisão é {div}")
+        print("final da Divisão!")
+    
+    elif '*' in operador:
+        mult = n1_float * n2_float
+        print(f"A multiplicação é {mult}")
+        print("final da multiplicação!")      
+
+    else:
+        print("Algo não esta certo. Contate o progrmador!")
     
     sair = input("Quer sair? [s]im: ").lower().startswith('s') #deixa tudo minisculo e se começar com s retorna um True.
     print(sair)
