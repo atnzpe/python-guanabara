@@ -1,3 +1,4 @@
+
 import os
 
 secret_word = input("Digite uma palavra secreta: ")
@@ -20,16 +21,18 @@ while n_tentativas <= 3:
         print('Parabens tu acertou!!')
 
     else:
-        while n_tentativas <= 3:
+        n_tentativas = 3
+        while n_tentativas > 0:
 
-            print(f' "*" . Voce tem {n_tentativas} Tentativas')
+            print(f' "*" . Voce tentou {n_tentativas} Tentativas')
             letra_digitada = input(
                 'Advinhe a letra que esta na palavra secreta: ')
 
             if letra_digitada in secret_word:
                 print(f'{letra_digitada=}')
+                break
 
-            n_tentativas += 1    
+            n_tentativas -= 1    
 
         print(f'Você usou {n_tentativas} Tentativas!')
         
