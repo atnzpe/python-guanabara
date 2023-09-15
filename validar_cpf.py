@@ -47,7 +47,6 @@ nine_first_numbers = []
 for i in cpf:
     number_multiplies_by_ten = int(i)*(countdown)
     nine_first_numbers.append(number_multiplies_by_ten)
-    
     countdown -=1
 #Obtem os nove primeiros numeros multiplicados pela contagem regressiva de 10 até zero
 nine_first_numbers = nine_first_numbers [:9]
@@ -94,6 +93,32 @@ contrário disso:
 O segundo dígito do CPF é o 0
 
 """
-   
+#contador regresssivo
+countdown = 11
+#Lista dos nove primeiros numeros
+nine_first_numbers = cpf[:9]
+#LIsta dos 9 primeiros e o primeiro numero
+nine_first_numbers_and_first = list(nine_first_numbers)
+nine_first_numbers_and_first.append(str(first_digit_cpf))
+#Lista dos numeros multiplicados pelo contador regressivo
+nine_numbers_and_first_number_multiple_countdow = []
 
- 
+#laco for para percorrer e multiplicar   
+for i in nine_first_numbers_and_first:
+    number_multiplies_by_eleven = int(i)*(countdown)
+    nine_numbers_and_first_number_multiple_countdow.append(number_multiplies_by_eleven)
+    countdown -=1
+
+#Printa a soma da lista
+soma_lista = sum(nine_numbers_and_first_number_multiple_countdow)
+print(soma_lista)
+
+#Multiplica o resultado por 10
+multi_list_for_ten = soma_lista * 10
+print(multi_list_for_ten)
+
+#Obtem o resto da divisão da conta anterior por 11
+div_sum_anterior = multi_list_for_ten % 11
+print(div_sum_anterior)
+
+segundo_digito_cpf = div_sum_anterior if div_sum_anterior <= 9  else 0 
