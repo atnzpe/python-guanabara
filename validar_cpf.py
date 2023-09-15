@@ -29,8 +29,11 @@ contrario disso:
 
 
 """
-cpf = "74682489070"
-#cpf = input()
+#cpf = "74682489070"
+cpf = input('Digite seu CPF com apenas números: ') \
+    .replace('.','') \
+    .replace(' ', '') \
+    .replace('-', '')
 contador = 0
 
 
@@ -60,10 +63,10 @@ multiplie_sum_nine_first_numbers = sum_nine_first_numbers * 10
 
 #Obter o resto da divisão de multiplie_sum_nine_first_numbers por 11
 resto_multiplie = multiplie_sum_nine_first_numbers % 11
+resto_multiplie = resto_multiplie if resto_multiplie <= 9 else 0
+print(f'O Primeiro Digito é {resto_multiplie}')
 
-print(f'Resultado é {resto_multiplie}' if resto_multiplie <= 9 else 0)
-
-first_digit_cpf = resto_multiplie if resto_multiplie <= 9 else 0
+first_digit_cpf = resto_multiplie
 
 """
 Calcular o Segundo Digito do CPF
@@ -111,14 +114,16 @@ for i in nine_first_numbers_and_first:
 
 #Printa a soma da lista
 soma_lista = sum(nine_numbers_and_first_number_multiple_countdow)
-print(soma_lista)
+#print(soma_lista)
 
 #Multiplica o resultado por 10
 multi_list_for_ten = soma_lista * 10
-print(multi_list_for_ten)
+#print(multi_list_for_ten)
 
 #Obtem o resto da divisão da conta anterior por 11
 div_sum_anterior = multi_list_for_ten % 11
-print(div_sum_anterior)
+
 
 segundo_digito_cpf = div_sum_anterior if div_sum_anterior <= 9  else 0 
+
+print(f'Segundo Digito é {segundo_digito_cpf}')
