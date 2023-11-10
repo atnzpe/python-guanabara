@@ -26,16 +26,16 @@ def sorteia_pergunta(lista_perguntas):
     print(pergunta_atual['Pergunta'])
     print ('Escolha um Opção:')
     for chave in pergunta_atual['Opções']:
-        print(chave)
+        print(f'> {chave}')
 
     while True:
         resposta = input('Digite sua Escolha: ')
 
         if resposta in pergunta_atual['Resposta']:
-            print(f'{resposta=}')
+            print(f'Certa Resposta!')
             break
         else:
-            print('Voce errou')
+            print('Voce errou!')
             break
 
     #return print(pergunta_atual['Pergunta'])
