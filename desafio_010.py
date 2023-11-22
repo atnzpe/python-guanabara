@@ -6,5 +6,5 @@ v_em_real = float(input("Digite quantos reais você tem na carteira: "))
 cotacao_dollar = float(input("Qual a cotação do Dollar? "))
 real_convertido_dollar = v_em_real / cotacao_dollar
 
-print(f"Valor em Dollar US$ {round(real_convertido_dollar,2)}.")
+print(f"O valor de R$ {v_em_real} representa o valor em Dollar de US$ {round(real_convertido_dollar,2)}.")
 
