@@ -25,4 +25,4 @@ valor_total_km = valor_por_km(valor_km, km_rodado)
 total = total_diaria + valor_total_km
 
 print(f"O valor da é R$ {total_diaria:.2f}\nO valor dos KM rodados foi de R$ {valor_total_km:.2f}")
-print(f"O Total a ser pago será de R$ {total:.2f}")
+print(f"O Total a ser pago será de R$ {total:.2f}!")
