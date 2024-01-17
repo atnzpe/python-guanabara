@@ -20,6 +20,7 @@ beatles = []
 print("Etapa 1:", beatles)
 
 #etapa 2: use o método append() para adicionar os seguintes membros da banda à lista: John Lennon, Paul McCartney e George Harrison;
+# Criei uma lista com os nomes a serem inseridos
 members = ['John Lennon','Paul McCartney','George Harrison']
 
 #Usando list comprehension ficaria assim
