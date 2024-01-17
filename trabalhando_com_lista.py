@@ -23,6 +23,10 @@ print("Etapa 1:", beatles)
 # Criei uma lista com os nomes a serem inseridos
 members = ['John Lennon','Paul McCartney','George Harrison']
 
+#Executa o FOR e utiliza o metodo append
+for members in members:
+    beatles.append(members)
+
 #Usando list comprehension ficaria assim
 # beatles = [members for members in members]
 
