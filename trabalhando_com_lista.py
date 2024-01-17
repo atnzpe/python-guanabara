@@ -18,6 +18,7 @@ Escreva um programa que reflita essas mudanças e permita praticar com o conceit
 # etapa 1: criar uma lista vazia chamada beatles;
 beatles = []
 print("Etapa 1:", beatles)
+print()
 
 # etapa 2: use o método append() para adicionar os seguintes membros da banda à lista: John Lennon, Paul McCartney e George Harrison;
 
@@ -35,18 +36,24 @@ print("Etapa 2:", beatles)
 
 # etapa 3: Use o loop for e o método append() para solicitar que o usuário adicione os seguintes membros da banda à lista: Stu Sutcliffe e Pete Best;
 for artist in beatles:
-    artist_Stu = 'Stu Sutcliffe'
-    artist_Pete = 'Pete Best'
+    artist_Stu = "Stu Sutcliffe"
+    artist_Pete = "Pete Best"
     while artist_Stu not in beatles and artist_Pete not in beatles:
-        r = input('Deseja inserir os Artista Stu Sutcliffe e Pete Best?\n[s]im\n[n]ão').lower().startswith('s')
-        if r == 's':
+        r = int(
+            input(
+                "\nDeseja inserir os Artistas Stu Sutcliffe e Pete Best?\n[1]Sim\n[2]Não\nDigite sua resposta: "
+            )
+        )
+        if r == 1:
             beatles.append(artist_Stu)
             beatles.append(artist_Pete)
-            print(f'{artist_Pete} e {artist_Stu} inseridos com sucesso!')
-            #break
+            print(f"\nParabens!\n{artist_Pete} e {artist_Stu} inseridos com sucesso!\n")
+
         else:
-            print(f'Você não inseriu {artist_Stu} e {artist_Pete} na lista de Menbros dos Beatles!')
-            print(r)
+            print(
+                f"\nVocê optou por não inserir {artist_Stu} e {artist_Pete} na lista de Menbros dos Beatles!"
+            )
+
 print("Etapa 3:", beatles)
 
 
