@@ -21,7 +21,11 @@ print("Etapa 1:", beatles)
 
 #etapa 2: use o método append() para adicionar os seguintes membros da banda à lista: John Lennon, Paul McCartney e George Harrison;
 members = ['John Lennon','Paul McCartney','George Harrison']
-beatles = [members for members in members]
+
+#Usando list comprehension ficaria assim
+# beatles = [members for members in members]
+
+
 print("Etapa 2:", beatles)
 
 
