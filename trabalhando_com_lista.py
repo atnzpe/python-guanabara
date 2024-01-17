@@ -38,8 +38,15 @@ for artist in beatles:
     artist_Stu = 'Stu Sutcliffe'
     artist_Pete = 'Pete Best'
     while artist_Stu not in beatles and artist_Pete not in beatles:
-        r = input('Deseja inserir os Artista Stu Sutcliffe e Pete Best?\n[S]im\n[N]ão')
-        if r == ''
+        r = input('Deseja inserir os Artista Stu Sutcliffe e Pete Best?\n[s]im\n[n]ão').lower().startswith('s')
+        if r == 's':
+            beatles.append(artist_Stu)
+            beatles.append(artist_Pete)
+            print(f'{artist_Pete} e {artist_Stu} inseridos com sucesso!')
+            #break
+        else:
+            print(f'Você não inseriu {artist_Stu} e {artist_Pete} na lista de Menbros dos Beatles!')
+            print(r)
 print("Etapa 3:", beatles)
 
 
