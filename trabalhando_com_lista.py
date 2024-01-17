@@ -57,11 +57,15 @@ for artist in beatles:
 print("Etapa 3:", beatles)
 
 
-# etapa 4
+# etapa 4: use a instrução del para remover Stu Sutcliffe e Pete Best da lista;
+del beatles[-1]
+del beatles[-1]
 
 print("Etapa 4:", beatles)
+print()
 
 # passo 5
+beatles.insert(0,'')
 
 print("Etapa 5:", beatles)
 
