@@ -15,16 +15,19 @@ Escreva um programa que reflita essas mudanças e permita praticar com o conceit
 
 """
 
-# etapa 1: criar uma lista vazia chamada beatles;
+print("# etapa 1: criar uma lista vazia chamada beatles;")
 beatles = []
 print("Etapa 1:", beatles)
 
-# etapa 2: use o método append() para adicionar os seguintes membros da banda à lista: John Lennon, Paul McCartney e George Harrison;
 
-# Criei uma lista com os nomes a serem inseridos
+print(
+    "\n# etapa 2: use o método append() para adicionar os seguintes membros da banda à lista: John Lennon, Paul McCartney e George Harrison;"
+)
+
+print("\n# Criei uma lista com os nomes a serem inseridos")
 members = ["John Lennon", "Paul McCartney", "George Harrison"]
 
-# Executei o FOR e utiliza o metodo append
+print("# Executei o FOR e utiliza o metodo append")
 for members in members:
     beatles.append(members)
 
@@ -33,25 +36,45 @@ for members in members:
 
 print("Etapa 2:", beatles)
 
-# etapa 3: Use o loop for e o método append() para solicitar que o usuário adicione os seguintes membros da banda à lista: Stu Sutcliffe e Pete Best;
+print(
+    "\n# etapa 3: Use o loop for e o método append() para solicitar que o usuário adicione os seguintes membros da banda à lista: Stu Sutcliffe e Pete Best;"
+)
 for artist in beatles:
-    artist_Stu = 'Stu Sutcliffe'
-    artist_Pete = 'Pete Best'
+    artist_Stu = "Stu Sutcliffe"
+    artist_Pete = "Pete Best"
     while artist_Stu not in beatles and artist_Pete not in beatles:
-        r = input('Deseja inserir os Artista Stu Sutcliffe e Pete Best?\n[S]im\n[N]ão')
-        if r == ''
+        r = int(
+            input(
+                "\nDeseja inserir os Artistas Stu Sutcliffe e Pete Best?\n[1]Sim\n[2]Não\nDigite sua resposta: "
+            )
+        )
+        if r == 1:
+            beatles.append(artist_Stu)
+            beatles.append(artist_Pete)
+            print(f"\nParabens!\n{artist_Pete} e {artist_Stu} inseridos com sucesso!\n")
+
+        else:
+            print(
+                f"\nVocê optou por não inserir {artist_Stu} e {artist_Pete} na lista de Menbros dos Beatles!"
+            )
+
 print("Etapa 3:", beatles)
 
 
-# etapa 4
+print("# etapa 4: use a instrução del para remover Stu Sutcliffe e Pete Best da lista;")
+del beatles[-1]
+del beatles[-1]
 
 print("Etapa 4:", beatles)
+print()
 
-# passo 5
+print("# etapa 5: Use o método insert() para adicionar Ringo Starr ao início da lista")
+beatles.insert(0, "Ringo Starr")
 
 print("Etapa 5:", beatles)
+print()
 
 
-# testando o tamanho da lista
+print("\n# testando o tamanho da lista")
 
-("o fabuloso", len(beatles))
+print("o fabuloso", len(beatles))
