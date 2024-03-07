@@ -21,4 +21,26 @@ if n > 1:
       
         
         
+# Lista para armazenar os itens
+itens = []
 
+#TODO: Solicite os itens ao usuário
+
+while len(itens) < 3:
+  item = input()
+  itens.append(item)
+
+
+# Exibe a lista de itens
+print("Lista de itens:")
+for item in itens:
+    print(f"- {item}")
+        
+#Desafio 3
+capacidade_atual, aumento_percentual = map(int, input().split())
+
+#TODO: Calcule a nova capacidade do disco de Mithril
+total = int(capacidade_atual + ((capacidade_atual/100) * aumento_percentual))
+
+# TODO: Imprima a nova capacidade
+print(total)
