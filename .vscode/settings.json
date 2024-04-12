@@ -8,5 +8,8 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.formatting.provider": "none",
-    "wolf.disableHotModeWarning": true
+    "wolf.disableHotModeWarning": true,
+    "cSpell.words": [
+        "Cada"
+    ]
 }
