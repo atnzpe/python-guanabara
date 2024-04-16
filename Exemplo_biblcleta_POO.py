@@ -28,6 +28,13 @@ class Moto(Veiculo):
 
 
 class Carro(Veiculo):
+    def __init__(self, cor, modelo, ano, tanque_cheio):
+        super().__init__(cor, modelo, ano)
+        self.tanque_cheio = tanque_cheio
+
+    def abastecido(self):
+        print(f"{'Sim' if self.tanque_cheio else 'Não'}' estou abastecido")
+
     pass
 
 
@@ -36,36 +43,17 @@ class Caminhao(Veiculo):
 
 
 class Bicicleta(Veiculo):
-    """
-    # Construtor
-    def __init__(self, cor, modelo, ano, valor):
-        # instancias do objeto
-        self.cor = cor
-        self.modelo = modelo
-        self.ano = ano
-        self.valor = valor
-
-    # Comportamento do objeto
-    # Metodos são funções dentro da classe
-    def buzinar(self):
-        song_list = ["Sai da Frente!!!", "Muuu", "Béééé", "Fon Fon"]
-        print(random.choice(song_list))
-
-    def parar(self):
-        print("Parando a biclicleta ...")
-        print("Bicicleta parada!")
-
-    def andar(self):
-        print("Vrummm...")
-    """
+    def trocar_marchar(self):
+        print("Trocou A Marcha!")
 
 
 print("=== TESTE DRIVE ===")
 name_client = input("Qual o seu primeiro nome: ")
 
+
 def menu():
     escolha = input(
-    """
+        """
         === Escolha o Veículo ===
         [0] Bicicleta
         [1] Moto
@@ -77,7 +65,6 @@ def menu():
     return escolha
 
 
-
 while True:
     # Preco sorteio
     # preco = [0, 1, 7, 14, 21]
@@ -87,7 +74,6 @@ while True:
         cor_escolhida = input("Escolha cor: ")
         modelo_escolhido = input("Escolha o modelo: ")
         ano_escolhido = input("Escolha o ano: ")
-        # preco_sorteado = random.choice(preco)
 
         object_name = Bicicleta(cor_escolhida, modelo_escolhido, ano_escolhido)
 
@@ -102,6 +88,7 @@ while True:
                 [1] Andar
                 [2] Buzinar
                 [3] Parar
+                [4] Verificar Tanque
                 [q] Sair
                 -> """
             )
@@ -119,6 +106,9 @@ while True:
                 object_name.parar()
                 continue
 
+            elif opcao == "4":
+                object_name.abastecido()
+
             elif opcao == "q":
                 break
 
@@ -130,7 +120,37 @@ while True:
         pass
         continue
     elif opcao == "2":
-        pass
+        object_name = name_client + "_carro"
+        cor_escolhida = input("Escolha cor: ")
+        modelo_escolhido = input("Escolha o modelo: ")
+        ano_escolhido = input("Escolha o ano: ")
+        # preco_sorteado = random.choice(preco)
+        while True:
+            _escolha = input("""
+            === Tanque Cheio? ===
+            [1] Sim
+            [0] Não
+            """)
+            opcao = _escolha
+            if opcao == "1":
+                tanque_cheio = True
+                break
+            elif opcao == "2":
+                tanque_cheio = False
+                break
+            else:
+                print("Escolha um opção válida!")
+                continue
+            # preco_sorteado = random.choice(preco)
+
+        object_name = Carro(
+            cor_escolhida, modelo_escolhido, ano_escolhido, tanque_cheio
+        )
+
+        print(
+            f"Mr. / Mra. {name_client} sua bike é {object_name.cor}, o modelo escolhido foi {object_name.modelo}, ano {object_name.ano} !"
+        )
+        
         continue
     elif opcao == "3":
         pass
@@ -141,4 +161,3 @@ while True:
     else:
         print("Digite uma opção válida!")
         continue
-    
