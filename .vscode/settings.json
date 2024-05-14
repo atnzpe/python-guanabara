@@ -10,6 +10,9 @@
     "python.formatting.provider": "none",
     "wolf.disableHotModeWarning": true,
     "cSpell.words": [
-        "Cada"
+        "Cada",
+        "Executa",
+        "longa",
+        "mensagem"
     ]
 }
