@@ -45,6 +45,7 @@ class Leao(Mamifero):
 
 
 # Classe que extende de mamifero e de ave
+
 class Onintorrinco(Mamifero, Ave):
     pass
 
