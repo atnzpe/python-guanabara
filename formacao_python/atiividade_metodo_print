@@ -1,0 +1,36 @@
+#Atividades Metodo Print
+
+
+'''
+1 Realize o print:
+ do seu nome completo, 
+ sua idade e sua altura 
+ utilizando um print para cada valor 
+'''
+nome = "Mestra Luziara"
+idade = 100
+altura = 1.98
+print(nome)
+print(idade)
+print(altura)
+
+'''
+2 Realize o print do seu nome completo, 
+sua idade e sua altura utilizando apenas um print para todos valores. 
+'''
+print(nome, idade, altura)
+
+
+'''
+3 Realize o print de 3 números de sua escolha
+ em um mesmo print, mas separados pelo caractere '-'.
+
+'''
+n1 = 1
+n2 = 2
+n3 = 3
+
+n4, n5, n6 = 4,5,6
+
+print (n1,n2,n3,n4,n5,n6, sep ='-')
+print(nome, idade, altura, sep = ' - ')
