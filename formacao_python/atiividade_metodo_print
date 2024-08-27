@@ -1,12 +1,14 @@
 #Atividades Metodo Print
 
 
-'''
+e1 = '''
 1 Realize o print:
  do seu nome completo, 
  sua idade e sua altura 
  utilizando um print para cada valor 
 '''
+
+print(e1)
 nome = "Mestra Luziara"
 idade = 100
 altura = 1.98
@@ -14,14 +16,14 @@ print(nome)
 print(idade)
 print(altura)
 
-'''
+e2 = '''
 2 Realize o print do seu nome completo, 
 sua idade e sua altura utilizando apenas um print para todos valores. 
 '''
-print(nome, idade, altura)
+print(e2)
+print(f'Nome: {nome}, Idade: + de {idade}, Altura: {altura}')
 
-
-'''
+e3 = '''
 3 Realize o print de 3 números de sua escolha
  em um mesmo print, mas separados pelo caractere '-'.
 
@@ -32,5 +34,6 @@ n3 = 3
 
 n4, n5, n6 = 4,5,6
 
+print(e3)
 print (n1,n2,n3,n4,n5,n6, sep ='-')
 print(nome, idade, altura, sep = ' - ')
