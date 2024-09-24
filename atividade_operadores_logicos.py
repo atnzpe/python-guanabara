@@ -26,11 +26,15 @@ hoje_e_sabado = input(
 
 hoje_e_sabado = True if hoje_e_sabado == "S" else False
 
-if falta_comida and hoje_e_sabado:
+if falta_comida or hoje_e_sabado:
     print ('\nVocê precisa ir ao mercado.')
 
 else:
     print(f'\nFique em casa porque {falta_comida=} e/ou {hoje_e_sabado=}')
 
-
+#2 Crie um programa que responda "se você pode atravessar a rua" 
+# #na faixa de pedestres. Você pode atravessar a rua se o "sinal estiver 
+# #vermelho" e "se não houver nenhum carro vindo da direita" E "nem da esquerda". 
+# #Altere as variáveis para verificar se o programa esta correto. 
+# #Mostre na saída do programa o valor lógico.
 
