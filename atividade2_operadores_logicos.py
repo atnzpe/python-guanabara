@@ -1,5 +1,5 @@
-#2 Crie um programa que responda "se você pode atravessar a rua" 
-# #na faixa de pedestres. Você pode atravessar a rua se o "sinal estiver 
+# 2 Crie um programa que responda "se você pode atravessar a rua" 
+# na faixa de pedestres. Você pode atravessar a rua se o "sinal estiver 
 # #vermelho" e "se não houver nenhum carro vindo da direita" E "nem da esquerda". 
 # #Altere as variáveis para verificar se o programa esta correto. 
 # #Mostre na saída do programa o valor lógico.
@@ -56,7 +56,7 @@ while True:
     pode_atravessar = esta_na_faixa_pedestre and sinal_vermelho and not carro_vindo_direita and not carro_vindo_esquerda
 
     if pode_atravessar:
-        print ('\nPode Atravessar a rua.')
+        print (f'\nPode Atravessar a rua {pode_atravessar}.')
         break
 
     else:
