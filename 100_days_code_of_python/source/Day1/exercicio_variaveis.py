@@ -3,7 +3,7 @@
 #O copo1 contém leite e o copo2 contém suco. 
 #Escreva 3 linhas de código para trocar o conteúdo das variáveis.
 #Você não tem permissão para digitar as palavras "leite" ou "suco".
-#Você só pode usar variáveis ​para resolver este exercício
+#Você só pode usar variaveis para resolver este exercicio
 
 glass1 = "milk"
 glass2 = "juice"
