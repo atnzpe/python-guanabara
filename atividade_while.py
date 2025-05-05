@@ -33,7 +33,7 @@ while contador < 5:
         contador += 1
         continue
     else:
-        numeros_recebidos += numero_digitado
+        numeros_recebidos +=  numero_digitado
         contador += 1
         
 print(f"A soma dos números é {numeros_recebidos:.2f}")
